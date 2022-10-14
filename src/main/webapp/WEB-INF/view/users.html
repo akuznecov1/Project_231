@@ -23,7 +23,7 @@
             <td th:utext="${user.getSecondName()}"></td>
             <td th:utext="${user.getCar()}"></td>
             <td><a th:href="@{/{id}/edit(id=${user.getId()})}">Edit</a></td>
-            <td><form th:method="DELETE" th:action="@{/{id}/delete(id=${user.getId()})}">
+            <td><form th:method="DELETE" th:action="@{/{id}(id=${user.getId()})}">
                 <input type="submit" value="Delete">
             </form></td>
         </tr>

@@ -52,11 +52,11 @@ public class UserController {
         return "redirect:/users";
     }
 
-    @DeleteMapping("/users/{id}")
+
+
+    @DeleteMapping(value = "/{id}")
     public String delete(@PathVariable("id") long id) {
         userService.removeUser(id);
         return "redirect:/users";
     }
-
-
 }
